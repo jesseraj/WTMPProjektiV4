@@ -13,7 +13,7 @@ const fetchData = async (url, options = {}, useProxy) => {
     url = `https://api.allorigins.win/get?url=${encodeURIComponent(url)}`;
   } else if (useProxy === 'fazer-php') {
     const subPath = url.split('menu/')[1];
-    url = `https://users.metropolia.fi/~mattpe/proxy/fazer-proxy.php/${subPath}`;
+    url = `https://users.metropolia.fi/~jesseraj/WTMP/Proxy/proxy-server/fazer-proxy.php/${subPath}`;
   }
   let jsonData;
   try {

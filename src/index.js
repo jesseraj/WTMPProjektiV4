@@ -4,6 +4,7 @@ import {fetchData} from './modules/network';
 import {getTodayIndex, todayDate} from './modules/tools';
 import HSLData from './modules/hsl-data';
 
+// ------------------------------------------------------------------------------------------------------
 
 let language = 'fi';
 
@@ -21,6 +22,7 @@ const renderMenu = (data, targetId) => {
   }
 };
 
+// ------------------------------------------------------------------------------------------------------
 
 /**
  * Display pages/vies in carousel mode
@@ -45,6 +47,7 @@ const createViewCarousel = (activeView, duration) => {
 
 };
 
+// ------------------------------------------------------------------------------------------------------
 
 /**
  * Initialize application
@@ -53,9 +56,6 @@ const init = () => {
 
   //createViewCarousel(0, 10);
 
-  // TODO:
-  // update sodexo data module to be similar than Fazer
-
   // Render Sodexo
   fetchData(SodexoData.dataUrlDaily).then(data => {
     console.log('sodexo', data);
@@ -63,30 +63,8 @@ const init = () => {
     renderMenu(courses, 'sodexo');
   });
 
-  // // Render Fazer
-  // fetchData(FazerData.dataUrlFi, {}, 'fazer-php').then(data => {
-  //   console.log('fazer', data);
-  //   const courses = FazerData.parseDayMenu(data.LunchMenus, getTodayIndex());
-  //   renderMenu(courses, 'fazer');
-  // });
 
-
-
-  // fetch("https://www.foodandco.fi/api/restaurant/menu/week?language=en&restaurantPageId=270540&weekDate=" + todayDate)
-
-  // .then(response => response.json())
-  // .then(tulos => console.log(tulos));
-
-
-
-  // fetch('https://api.github.com/repos/javascript-tutorial/en.javascript.info/commits')
-  // .then(response => response.json())
-  // .then(commits => console.log(commits));
-
-
-
-
-
+// ------------------------------------------------------------------------------------------------------
 
   // Playing with hsl data
   fetchData(HSLData.apiUrl, {
@@ -143,24 +121,9 @@ const init = () => {
 
   });
 
-      // <br> Alla tietoja seuraavaksi saapuvista busseista:
-      // <br>
-      // <br> Mistä: ${stop.name}
-      // <br> Minne: ${stop.stoptimesWithoutPatterns[0].headsign}
-      // <br> Milloin seuraava: ${time.toLocaleString().substr(13, 5)}
-      // <br>
-      // <br> Mistä: ${stop.name}
-      // <br> Minne: ${stop.stoptimesWithoutPatterns[1].headsign}
-      // <br> Milloin: ${time2.toLocaleString().substr(13, 5)}
-      // <br>
-      // <br> Mistä: ${stop.name}
-      // <br> Minne: ${stop.stoptimesWithoutPatterns[2].headsign}
-      // <br> Milloin: ${time3.toLocaleString().substr(13, 5)}
-      // <br> Milloin: ${time3.toISOString().substr(0, 10)}
-      // <br>
-      // <br> Yleisesti aika: ${time}
-
-
+// ------------------------------------------------------------------------------------------------------
 
 };
 init();
+
+// ------------------------------------------------------------------------------------------------------

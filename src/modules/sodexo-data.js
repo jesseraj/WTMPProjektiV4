@@ -24,5 +24,6 @@ const parseDayMenu = (menu, lang = 'fi') => {
   return dailyMenu;
 };
 
+
 const SodexoData = {dataUrlDaily, dataUrlWeekly, parseDayMenu};
 export default SodexoData;

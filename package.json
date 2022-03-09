@@ -1,7 +1,7 @@
 {
-  "name": "wtmp-projekti-v1",
-  "version": "1.0.6",
-  "description": "Simple boilerplate for webpack powered projects",
+  "name": "wtmp-projekti-v4",
+  "version": "1.0.4",
+  "description": "Ei oo ferrari, mut ainaki on lada..",
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,7 +9,7 @@
     "build": "webpack --config webpack.prod.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "WTMPV4",
   "license": "ISC",
   "devDependencies": {
     "clean-webpack-plugin": "^4.0.0",

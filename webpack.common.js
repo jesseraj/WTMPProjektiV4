@@ -19,7 +19,7 @@ module.exports = {
       },
     ]}),
     new HtmlWebpackPlugin({
-      title: 'WTMP Examples 2022',
+      title: 'WTMP Projekti V4',
       meta: {
         viewport: 'width=device-width, initial-scale=1.0'
       },
